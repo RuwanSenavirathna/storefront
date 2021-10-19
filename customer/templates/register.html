@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    StoreFront : Register Customer
+{% endblock %}
+
+{% block content %}
+    <h1>
+        Register Customer
+    </h1>
+    <div class="row">
+        {% for register in registers %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <!-- <img src="{{ custom.profile_pic }}"  class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">{{ register.name }}</h5>
+                  <p class="card-text">{{ register.date }}. Is Active : {{ register.is_active }}</p>
+                  <a href="#" class="btn btn-primary">Register Now</a>
+                </div>
+              </div>
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}
+
+<html>
+    <head>
+        <body>
+            <div>
+                <h2>This is the registration result</h2>
+            </div>
+            {% for register in registers %}
+            <div class="container">
+                
+                <li>{{ register.name }}</li>
+                <li>{{ register.date }}</li>
+                <li>{{ register.is_active }}</li>
+    
+            </div>
+            {% endfor %}
+        </body>
+    </head>
+</html>

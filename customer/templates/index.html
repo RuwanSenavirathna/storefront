@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    StoreFront : Customers 
+{% endblock %}
+
+{% block content %}
+    <h1>Customers</h1>
+    <div class="row">
+        {% for custom in customer %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ custom.profile_pic }}"  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ custom.name }}</h5>
+                  <p class="card-text">{{ custom.age }} years old. TP Number : {{ custom.tp_number }}</p>
+                  <a href="#" class="btn btn-primary">Call Now</a>
+                </div>
+              </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
