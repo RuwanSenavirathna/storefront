@@ -1,7 +1,7 @@
 # storefront | Django Tutorial for Beginners
 
 
-Django Tutorial for Beginners
+Python Django Tutorial for Beginners.
 
 
 ..........
