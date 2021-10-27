@@ -12,3 +12,5 @@ Python Django Tutorial for Beginners.
 ## Languages / Covered topics
 + Python, Django
 + LEARN: Django debug toolbar, Creating Django Apps, Data modeling
+
+
